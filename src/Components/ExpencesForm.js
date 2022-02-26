@@ -15,6 +15,7 @@ const ExpencesForm = (props) => {
   const addExpences = (event) => {
     event.preventDefault();
     const expencesData = {
+      id: Math.random().toString(),
       title: title,
       amount: amount,
       date: new Date(date),
@@ -28,27 +29,41 @@ const ExpencesForm = (props) => {
   return (
     <div>
       <form onSubmit={addExpences}>
-        <lable for="title_form">Title: </lable>
-        <input
-          id="title_form"
-          type="text"
-          value={title}
-          onChange={titleChange}
-        ></input>
-        <lable for="amount_form">Amount: </lable>
-        <input
-          id="amount_form"
-          type="text"
-          value={amount}
-          onChange={amountChange}
-        ></input>
-        <lable for="date_form">Date: </lable>
-        <input
-          id="date_form"
-          type="date"
-          value={date}
-          onChange={dateChange}
-        ></input>
+        <div className="mb-3">
+          <lable for="title_form">Title: </lable>
+          <input
+            id="title_form"
+            className="form-control"
+            type="text"
+            value={title}
+            onChange={titleChange}
+            required
+          ></input>
+        </div>
+        <div className="mb-3">
+          <lable for="amount_form" className="form-label">
+            Amount:{" "}
+          </lable>
+          <input
+            id="amount_form"
+            className="form-control"
+            type="text"
+            value={amount}
+            onChange={amountChange}
+            required
+          ></input>
+        </div>
+        <div className="mb-3">
+          <lable for="date_form">Date: </lable>
+          <input
+            id="date_form"
+            className="form-control"
+            type="date"
+            value={date}
+            onChange={dateChange}
+            required
+          ></input>
+        </div>
         <button type="submit">Add Expences</button>
       </form>
     </div>

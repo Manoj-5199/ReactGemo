@@ -1,14 +1,16 @@
 import ExpencesForm from "./ExpencesForm";
-const AddExpences = () => {
+import "./Css/AddExpences.css";
+
+const AddExpences = (props) => {
   const saveData = (expData) => {
     const expenData = {
       ...expData,
-      id: Math.random().toString(),
     };
     console.log(expenData);
+    props.toSaveData(expenData);
   };
   return (
-    <div>
+    <div id="expences_form">
       <ExpencesForm onSaveData={saveData} />
     </div>
   );
