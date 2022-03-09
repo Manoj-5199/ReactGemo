@@ -1,0 +1,8 @@
+.list_expences {
+  border: solid 5px white;
+  border-radius: 20px;
+  background-color: blueviolet;
+  padding: 5mm;
+  width: 80%;
+  margin: auto;
+}

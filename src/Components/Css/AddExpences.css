@@ -1,8 +1,15 @@
-#expences_form{
-    background-color: blueviolet;
-    border-radius: 3mm;
-    padding: 10mm;
-    margin: auto;
-    width: 80%;
-
+#expences_form {
+  border: solid 5px white;
+  background-color: #cc99ff;
+  border-radius: 3mm;
+  padding: 10mm;
+  margin: auto;
+  width: 30%;
+}
+#add_expences {
+  border-radius: 2mm;
+  background-color: white;
+}
+lable {
+  text-align: left;
 }

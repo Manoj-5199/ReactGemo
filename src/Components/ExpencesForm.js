@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./Css/AddExpences.css";
+
 const ExpencesForm = (props) => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
@@ -30,7 +32,7 @@ const ExpencesForm = (props) => {
     <div>
       <form onSubmit={addExpences}>
         <div className="mb-3">
-          <lable for="title_form">Title: </lable>
+          <lable for="title_form">Title:</lable>
           <input
             id="title_form"
             className="form-control"
@@ -54,7 +56,7 @@ const ExpencesForm = (props) => {
           ></input>
         </div>
         <div className="mb-3">
-          <lable for="date_form">Date: </lable>
+          <lable for="date_form">Date:</lable>
           <input
             id="date_form"
             className="form-control"
@@ -64,7 +66,9 @@ const ExpencesForm = (props) => {
             required
           ></input>
         </div>
-        <button type="submit">Add Expences</button>
+        <button id="add_expences" type="submit">
+          Add Expences
+        </button>
       </form>
     </div>
   );

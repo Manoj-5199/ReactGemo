@@ -1,0 +1,28 @@
+.expences_item {
+  padding: 3mm;
+  margin: auto;
+  background-color: #4b4b4b;
+  border-radius: 5mm;
+}
+#date_exp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.expences_title {
+  color: white;
+  padding: 5mm;
+  text-align: left;
+  width: 90%;
+}
+.expences_amount {
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #40005d;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 5%;
+  height: fit-content;
+}
